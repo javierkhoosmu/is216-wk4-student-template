@@ -3,7 +3,7 @@
 
     // Add code here
     // challenge: use array  
-    const message = ref("Choose your favourite: ");
+    const message = ref("Choose your favourite fruit: ");
     const fruits = ref(["apple", "orange", "peach"]);
     // const fruit1 = ref("apple");
     // const fruit2 = ref("orange");
@@ -19,7 +19,7 @@
     <label for=""><input type="radio" name="fruit"> {{ fruits[2] }} </label> 
     
     <!-- <label v-for="fruit in fruits" :key="fruit">
-        <input type="radui" name="fruit">{{  fruit }}        
+        <input type="radio" name="fruit">{{  fruit }}        
     </label> -->
 </template>
 

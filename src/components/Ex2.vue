@@ -2,7 +2,9 @@
     import { ref } from 'vue'
 
     // Add code here
-    import image from '../../public/assets/me.png'
+    const width = ref('200')
+    const height = ref('200')
+    const myImg = ref('../../public/assets/me.png')
 
     //multiple attribute binding
     const obj = ref({
@@ -14,9 +16,6 @@
 <template>
 
     <!-- Add code here -->
-   <h1>
-    <img v-bind:src="image" :width="200" :height="200">
-   </h1>
-   
-   <img v-bind=obj>
+    <img v-bind:src="myImg" :width="width" :height="height">
+    <img v-bind=obj>
 </template>
